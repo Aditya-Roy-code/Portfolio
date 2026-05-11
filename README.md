@@ -77,7 +77,7 @@ This portfolio highlights various web development projects demonstrating:
 
 Feel free to reach out to me through:
 - GitHub: [@Aditya-Roy-code](https://github.com/Aditya-Roy-code)
-- Portfolio: [View Live](https://aditya-roy-code.github.io/Portfolio)
+- Portfolio: [View Live]([https://aditya-roy-code.github.io/Portfolio](https://aditya-roy-portfolio.vercel.app/))
 
 ## 📝 License
 
