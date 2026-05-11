@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aditya Roy — Mechanical Engineer & AI Developer</title>
+<meta name="description" content="Portfolio of a Mechanical Engineering + AI/Python developer. Bridging hardware intuition with software intelligence." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- ══════════════════════════════════════════ NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">A<span>.</span>RoyMechAI</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#resume" class="nav-cta">Resume ↓</a>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#education" onclick="closeMobile()">Education</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#certifications" onclick="closeMobile()">Certifications</a>
+  <a href="#resume" onclick="closeMobile()">Resume</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ══════════════════════════════════════════ HERO -->
+<section id="hero" style="max-width: 100%; padding-left: clamp(1.5rem, 5vw, 4rem); padding-right: clamp(1.5rem, 5vw, 4rem);">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-badge">Available for opportunities</div>
+    <h1 class="hero-name">
+      Aditya Roy<br>
+      <span class="line2">Mech + AI</span>
+    </h1>
+    <p class="hero-tagline">
+      Mechanical Engineering meets <strong>Artificial Intelligence.</strong>
+      I build intelligent systems that bridge the physical and digital world —
+      from simulation models to production ML pipelines.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        View Projects
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">3<span>+</span></div>
+        <div class="stat-label">Projects Deployed</div>
+      </div>
+      <div>
+        <div class="stat-num">2<span>×</span></div>
+        <div class="stat-label">Engineering Degrees</div>
+      </div>
+      <div>
+        <div class="stat-num">5<span>+</span></div>
+        <div class="stat-label">Certifications</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ══════════════════════════════════════════ ABOUT -->
+<section id="about">
+  <div class="section-tag reveal">About Me</div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <h2 class="section-title">Where Machines<br>Meet Intelligence</h2>
+      <p>
+        I'm <strong>Aditya Roy</strong>, a fresher with a rare dual background in
+        <strong>Mechanical Engineering</strong> and <strong>Information Technology and Engineering</strong>.
+        While most developers think in code, I also think in systems, forces, and mechanisms —
+        and that gives me an edge when solving real-world engineering problems with AI.
+      </p>
+      <p>
+        My work focuses on <strong>Python, Machine Learning, and AI automation</strong>
+        applied to domains that matter — manufacturing, predictive maintenance, simulation,
+        and intelligent data pipelines. I'm not just a coder; I'm an engineer who codes.
+      </p>
+      <p>
+        Currently open to <strong>software developer, AI/ML engineer, and data science</strong>
+        roles, as well as hybrid tech + engineering positions.
+      </p>
+      <div class="about-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">CAD + Simulation</span>
+        <span class="tag">Data Engineering</span>
+        <span class="tag">Open Source</span>
+      </div>
+    </div>
+    <div class="about-card-grid reveal reveal-delay-2">
+      <div class="about-mini-card">
+        <span class="icon">🎓</span>
+        <div class="label">Degree</div>
+        <div class="value">B.Tech ITE</div>
+      </div>
+      <div class="about-mini-card">
+        <span class="icon">⚙️</span>
+        <div class="label">Diploma</div>
+        <div class="value">Mech Engg</div>
+      </div>
+      <div class="about-mini-card">
+        <span class="icon">📍</span>
+        <div class="label">Location</div>
+        <div class="value">Dehi, India</div>
+      </div>
+      <div class="about-mini-card">
+        <span class="icon">💼</span>
+        <div class="label">Status</div>
+        <div class="value">Open to Work</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ══════════════════════════════════════════ SKILLS -->
+<section id="skills">
+  <div class="section-tag reveal">Technical Skills</div>
+  <h2 class="section-title reveal">What I Work With</h2>
+  <p class="section-desc reveal">Tools, languages, and frameworks I use to build, analyze, and ship.</p>
+  <div class="skills-grid">
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-title"><span class="skill-cat-icon">🐍</span> Python & AI/ML</div>
+      <div class="skill-list">
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">Python</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">NumPy / Pandas</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">Scikit-learn</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">TensorFlow</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 70%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">Streamlit</span><span class="skill-pct">95%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 95%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-category reveal reveal-delay-1">
+      <div class="skill-cat-title"><span class="skill-cat-icon">💻</span> Dev & Web</div>
+      <div class="skill-list">
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">HTML / CSS / JS</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 75%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">API Integration</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 70%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">SQL / MySQL</span><span class="skill-pct">72%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 72%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">Git / GitHub</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">Firebase Authentication</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 65%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ══════════════════════════════════════════ EDUCATION -->
+<section id="education">
+  <div class="section-tag reveal">Education</div>
+  <h2 class="section-title reveal">Academic Background</h2>
+  <p class="section-desc reveal">Two engineering disciplines — one unified problem-solving mindset.</p>
+  <div class="edu-timeline">
+
+    <div class="edu-item reveal">
+      <div class="edu-year">2022 — 2026</div>
+      <div class="edu-degree">Bachelor of Technology — Information Technology and Engineering</div>
+      <div class="edu-school">GGSIPU / Maharaja Agrasen Institute of Technology, Delhi</div>
+      <p style="font-size:0.875rem; color:var(--text-muted); font-weight:300; line-height:1.6;">
+        Focused on software development, data structures, algorithms, databases, and AI/ML.
+        Completed a capstone project integrating Python ML with real-world engineering data.
+      </p>
+      <div class="edu-meta">
+        <span class="edu-badge">CGPA: 7.7 / 10</span>
+        <span class="edu-badge">Final Year Project: AI-Based Mentor(MERN & AI)</span>
+      </div>
+    </div>
+
+    <div class="edu-item reveal reveal-delay-1">
+      <div class="edu-year">2019 — 2022</div>
+      <div class="edu-degree">Diploma — Mechanical Engineering</div>
+      <div class="edu-school">BTE / Pusa Institute of Technology, Delhi</div>
+      <p style="font-size:0.875rem; color:var(--text-muted); font-weight:300; line-height:1.6;">
+        Strong foundation in thermodynamics, fluid mechanics, manufacturing processes,
+        and Machine Drawing. Hands-on experience with lathe, milling, and CNC machines.
+      </p>
+      <div class="edu-meta">
+        <span class="edu-badge">Score: 83.51%</span>
+        <span class="edu-badge">First Division with Distinction</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ================= PROJECTS SECTION ================= -->
+<section id="projects">
+
+  <div class="section-tag reveal">Projects</div>
+
+  <h2 class="section-title reveal">
+    Things I've Built
+  </h2>
+
+  <p class="section-desc reveal">
+    Real-world projects, deployed and production-focused.
+    Built with modern AI, full-stack, and IoT technologies.
+  </p>
+
+  <div class="projects-grid">
+
+    <!-- ================= FEATURED PROJECT ================= -->
+    <div class="project-card featured reveal">
+
+      <!-- IMAGE -->
+      <div class="project-image">
+        <img src="images/ai-mentor.png" alt="AI Mentor">
+      </div>
+
+      <!-- CONTENT -->
+      <div class="project-content">
+
+        <div class="project-number">01</div>
+
+        <h3 class="project-title">
+          AI Mentor
+        </h3>
+
+        <p class="project-desc">
+          AI-powered learning management platform featuring
+          course management, analytics, community discussions,
+          authentication, and AI-generated lesson videos using
+          Gemini AI, TTS, and FFmpeg integration.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-chip">React 19</span>
+          <span class="tech-chip">Vite</span>
+          <span class="tech-chip">Tailwind CSS</span>
+          <span class="tech-chip">Node.js</span>
+          <span class="tech-chip">Express</span>
+          <span class="tech-chip">PostgreSQL</span>
+          <span class="tech-chip">FastAPI</span>
+          <span class="tech-chip">Gemini AI</span>
+          <span class="tech-chip">JWT</span>
+        </div>
+
+        <div class="project-links">
+
+          <a href="https://github.com/Aditya-Roy-code/Ai-Mentor"
+             target="_blank"
+             class="proj-link">
+
+            GitHub
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2">
+
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+
+            </svg>
+          </a>
+
+          <a href="https://github.com/Aditya-Roy-code/Ai-Mentor"
+             target="_blank"
+             class="proj-link">
+
+            Live Demo
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2">
+
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= SMART IRRIGATION ================= -->
+    <div class="project-card reveal reveal-delay-1">
+
+      <div class="project-image">
+        <img src="images/Smart_Irrigation.png" alt="Smart Irrigation">
+      </div>
+
+      <div class="project-content">
+
+        <div class="project-number">02</div>
+
+        <h3 class="project-title">
+          Smart Irrigation System
+        </h3>
+
+        <p class="project-desc">
+          Intelligent irrigation system using sensor data,
+          weather insights, and automation to optimize water
+          usage. Includes monitoring dashboard, alerts,
+          analytics, and smart watering control.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-chip">Python</span>
+          <span class="tech-chip">CSV Dataset</span>
+          <span class="tech-chip">Automation</span>
+          <span class="tech-chip">Dashboard</span>
+        </div>
+
+        <div class="project-links">
+
+          <a href="https://github.com/Aditya-Roy-code/Smart_Irrigation_AICTE_Shell"
+             target="_blank"
+             class="proj-link">
+
+            GitHub
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2">
+
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+
+            </svg>
+          </a>
+
+          <a href="https://github.com/Aditya-Roy-code/Smart_Irrigation_AICTE_Shell"
+             target="_blank"
+             class="proj-link">
+
+            Live Demo
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2">
+
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= BHOJAN BRIDGE ================= -->
+    <div class="project-card reveal reveal-delay-2">
+
+      <div class="project-image">
+        <img src="images/BhojanBridge.png" alt="BhojanBridge">
+      </div>
+
+      <div class="project-content">
+
+        <div class="project-number">03</div>
+
+        <h3 class="project-title">
+          BhojanBridge
+        </h3>
+
+        <p class="project-desc">
+          Social impact platform developed during AI Dev.Yudh
+          Hackathon to connect food donors, NGOs, and volunteers
+          for surplus food distribution and hunger reduction.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-chip">HTML</span>
+          <span class="tech-chip">CSS</span>
+          <span class="tech-chip">JavaScript</span>
+          <span class="tech-chip">Vercel</span>
+        </div>
+
+        <div class="project-links">
+
+          <a href="https://github.com/Aditya-Roy-code/BhojanBridge"
+             target="_blank"
+             class="proj-link">
+
+            GitHub
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2">
+
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+
+            </svg>
+          </a>
+
+          <a href="https://github.com/Aditya-Roy-code/BhojanBridge"
+             target="_blank"
+             class="proj-link">
+
+            Live Demo
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2">
+
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= mechAA ================= -->
+    <div class="project-card reveal reveal-delay-3">
+
+      <div class="project-image">
+        <img src="images/mechAA.png" alt="mechAA">
+      </div>
+
+      <div class="project-content">
+
+        <div class="project-number">04</div>
+
+        <h3 class="project-title">
+          mechAA
+        </h3>
+
+        <p class="project-desc">
+          Full-stack web application built with EJS templating,
+          responsive CSS, and dynamic JavaScript functionality.
+          Focused on scalable architecture and clean UI.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-chip">EJS</span>
+          <span class="tech-chip">CSS</span>
+          <span class="tech-chip">JavaScript</span>
+          <span class="tech-chip">Node.js</span>
+        </div>
+
+        <div class="project-links">
+
+          <a href="https://github.com/Aditya-Roy-code/mechAA"
+             target="_blank"
+             class="proj-link">
+
+            GitHub
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2">
+
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+
+            </svg>
+          </a>
+
+          <a href="https://github.com/Aditya-Roy-code/mechAA"
+             target="_blank"
+             class="proj-link">
+
+            Live Demo
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2">
+
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ EXPERIENCE -->
+<section id="experience">
+  <div class="section-tag reveal">Experience</div>
+  <h2 class="section-title reveal">Internships & Work</h2>
+  <p class="section-desc reveal">Hands-on exposure in real environments — not just classroom theory.</p>
+  <div class="exp-grid">
+
+    <div class="exp-card reveal">
+      <div class="exp-logo">🤖</div>
+      <div>
+        <div class="exp-role">AI/ML Intern</div>
+        <div class="exp-company">UptoSkills</div>
+        <div class="exp-duration">Feb 2026 — May 2026 · 3 months · Remote / Delhi</div>
+        <ul class="exp-points">
+          <li>Developed and enhanced AI Tutor platform features using React.js, improving user engagement and overall learning experience through interactive UI components and responsive design.</li>
+
+<li>Implemented intelligent learning support features such as Course Progress Visualization, Streak Tracking System, and Attendance Calculation, helping users monitor performance and maintain consistency.</li>
+
+<li>Integrated AI-powered workflows using Google Gemini API, Text-to-Speech systems, and Wav2Lip technology to support automated educational content generation and realistic AI-driven teaching videos.</li>
+
+<li>Optimized frontend performance, debugging processes, and API integration workflows, ensuring seamless communication between frontend, backend, and AI modules.</li>
+
+<li>Collaborated with the development team using GitHub and Pull Requests (PRs), successfully contributing approved feature enhancements to the live project environment.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-card reveal reveal-delay-1">
+      <div class="exp-logo">🌱</div>
+      <div>
+        <div class="exp-role">AI/DS Intern</div>
+        <div class="exp-company">edunet foundation / AICTE</div>
+        <div class="exp-duration">July 2025 - August 2025 · 1 month · Remote / Delhi</div>
+        <ul class="exp-points">
+          <li>Worked on the Smart Irrigation System project under the AICTE Shell initiative, focused on automating and optimizing agricultural irrigation using IoT and intelligent monitoring systems.</li>
+
+  <li>Assisted in integrating sensor-based monitoring for soil moisture and environmental conditions to support efficient water management and reduce manual intervention.</li>
+
+  <li>Contributed to the development of automated irrigation logic based on real-time sensor readings and weather-related parameters.</li>
+
+  <li>Explored data logging and monitoring techniques for storing irrigation data and improving system analysis and reporting.</li>
+
+  <li>Participated in designing a user-friendly dashboard for monitoring irrigation status, system performance, and threshold customization.</li>
+
+  <li>Understood the implementation of alert and notification systems for critical soil conditions and irrigation-related issues.</li>
+
+  <li>Gained practical exposure to IoT-based smart agriculture solutions, automation workflows, and real-world problem-solving approaches.</li>
+</ul>
+      </div>
+    </div>
+    
+
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ══════════════════════════════════════════ CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-tag reveal">Certifications</div>
+  <h2 class="section-title reveal">Achievements</h2>
+  <p class="section-desc reveal">Successfully completed verified programs and certifications, demonstrating dedication to continuous growth, skill development, and professional excellence.</p>
+  <div class="cert-grid">
+    <div class="cert-card reveal">
+      <div class="cert-issuer">edunet foundation</div>
+      <div class="cert-name">AICTE Shell–Edunet Skills4Future Internship Certificate</div>
+      <div class="cert-date">AICTE · 2025</div>
+    </div>
+    <div class="cert-card reveal reveal-delay-1">
+      <div class="cert-issuer">AWS</div>
+      <div class="cert-name">AWS Job Simulation – Solution Architecture</div>
+      <div class="cert-date">Forage · 2025</div>
+    </div>
+    <div class="cert-card reveal reveal-delay-2">
+      <div class="cert-issuer">Neo4j GraphAcademy</div>
+      <div class="cert-name">Understanding of graph databases, relationships, and Cypher queries</div>
+      <div class="cert-date">Neo4j · 2025</div>
+    </div>
+    <div class="cert-card reveal reveal-delay-3">
+      <div class="cert-issuer">Introduction to Linux Unhatched</div>
+      <div class="cert-name">Foundation in Linux systems, command-line operations, and system basics</div>
+      <div class="cert-date">Cisco NetAcad · 2025</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-issuer">Social Summer of Code</div>
+      <div class="cert-name">Open-source collaboration and contribution experience</div>
+      <div class="cert-date">SSOC · 2025</div>
+    </div>
+    <div class="cert-card reveal reveal-delay-1">
+      <div class="cert-issuer">Web Development Internship</div>
+      <div class="cert-name">Frontend development experience using HTML, CSS, and JavaScript</div>
+      <div class="cert-date">Suvidha Foundation · 2024</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ══════════════════════════════════════════ RESUME -->
+<section id="resume" class="resume-section" style="max-width:100%; background: var(--bg2); padding: clamp(4rem,8vw,7rem) clamp(1.5rem,5vw,4rem);">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div class="resume-inner reveal">
+      <div class="section-tag" style="justify-content:center; margin-bottom:1rem;">Resume</div>
+      <h2 class="resume-title">Ready to contribute from day one.</h2>
+      <p class="resume-desc">
+        Download my resume for a complete overview of my skills, education, and projects —
+        formatted for ATS and human readers alike.
+      </p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="https://drive.google.com/file/d/1OctcxGm3y4Nbw7saGB3CCdljF2bCNFqw/view?usp=drive_link" target="_blank" class="btn-primary">
+          ↓ Download Resume (PDF)
+        </a>
+        <a href="https://www.linkedin.com/in/aditya-roy-09may04/" target="_blank" class="btn-outline">
+          LinkedIn Profile →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ CONTACT -->
+<section id="contact">
+  <div class="section-tag reveal">Contact</div>
+  <h2 class="section-title reveal">Let's Talk</h2>
+  <p class="section-desc reveal">
+    Open to full-time roles, internships, collaborations, and freelance projects.
+    I respond within 24 hours.
+  </p>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <a href="adityaroy9054@gmail.com" class="contact-link-item reveal">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <div class="contact-item-label">Email</div>
+          <div class="contact-item-value">adityaroy9054@gmail.com</div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/aditya-roy-09may04/" target="_blank" class="contact-link-item reveal reveal-delay-1">
+        <div class="contact-icon">🌐</div>
+        <div>
+          <div class="contact-item-label">LinkedIn</div>
+          <div class="contact-item-value">linkedin.com/in/aditya-roy-09may04</div>
+        </div>
+      </a>
+      <a href="https://github.com/Aditya-Roy-code" target="_blank" class="contact-link-item reveal reveal-delay-2">
+        <div class="contact-icon">👾</div>
+        <div>
+          <div class="contact-item-label">GitHub</div>
+          <div class="contact-item-value">github.com/Aditya-Roy-code</div>
+        </div>
+      </a>
+      <a href="https://wa.me/919315028164" target="_blank" class="contact-link-item reveal reveal-delay-3">
+        <div class="contact-icon">📱</div>
+        <div>
+          <div class="contact-item-label">WhatsApp / Phone</div>
+          <div class="contact-item-value">+91 93150 28164</div>
+        </div>
+      </a>
+    </div>
+
+    <form class="contact-form reveal reveal-delay-1" onsubmit="handleFormSubmit(event)">
+      <div class="form-group">
+        <label class="form-label">Your Name</label>
+        <input type="text" class="form-input" placeholder="Recruiter / Hiring Manager" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-input" placeholder="hr@company.com" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Message</label>
+        <textarea class="form-textarea" placeholder="I'd like to connect about..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary" style="align-self:flex-start; border:none;">
+        Send Message →
+      </button>
+      <div id="form-success" style="display:none; color: var(--accent2); font-size:0.9rem; margin-top:0.5rem;">
+        ✓ Message sent! I'll get back to you soon.
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ FOOTER -->
+<footer>
+  <p>Designed & Built by <span>Aditya Roy</span> · 2025 · Consistency and curiosity build success
+</p>
+</footer>
+
+ <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
